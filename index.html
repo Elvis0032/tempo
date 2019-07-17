@@ -11,13 +11,19 @@
 	</head>
 	<body>
 		<div class="container">	
+
 			<header>
+                <img  id="weather-img"/>
                 <h1> <strong>Tempo</strong><span>Informática 514-A</span></h1>	
                 <p id="idcidade"></p>
+
+                <input type="text" id="cidade" placeholder="Digite o nome da cidade" >
+                <button id="enter" onclick="requestWeather();">Pesquisar</button>
 
             </header>
             
 			<div class="main clearfix">  
+
 				<nav id="menu" class="nav">					
 					<ul>
 						<li>
@@ -56,6 +62,15 @@
 				</nav>
 			</div>
         </div>
+        
+        <script>
+                var input = document.getElementById("cidade");
+                input.addEventListener("keyup", function(event) {
+                  if (event.keyCode === 13) {
+                    document.getElementById("enter").click();
+                  }
+                });
+                </script>
 
     </body>
 </html>
