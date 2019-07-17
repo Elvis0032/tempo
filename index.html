@@ -1,52 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="no-js">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<meta charset="UTF-8" />
+        <title>API Tempo</title> 
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="api.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<header>
+                <h1> <strong>Tempo</strong><span>Informática 514-A</span></h1>	
+                <p id="idcidade"></p>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tempo em Palmeida Dos Índios</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <link rel="stylesheet" href="estilo.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <figure class="ff">
-
-                    <img src="clima.jpg" />
-
-                    <figcaption>
-
-                        <div class="pp" >
-                            <h1> <strong> Tempo em Palmeira dos Índios </strong> </h1>
-                            <h4>Quarta-feira 02/05</h4>
-                            <h3>Tempo: Pancadas de chuva leves</h3>
-                            <h3>Velocidade do vento: 19km/h</h3>
-                            <h3>Temperatura: 32°C</h3>
-                            <h4>05:30-Nascer do sol em Palmeira dos Índios, AL</h4>
-                            <h4>17:17-Pôr do sol em Palmeira dos Índios, AL</h4>
-                        </div>
-                    </figcaption>
-
-                </figure>
-            </div>
-
+            </header>
+            
+			<div class="main clearfix">  
+				<nav id="menu" class="nav">					
+					<ul>
+						<li>
+						    <a>     
+                                <label>Temperatura atual:</label>   
+                                <p id="temp"></p>
+							</a>
+						
+						</li>
+						<li>
+							<a>
+                                <label>Descrição:</label>
+                                <p id="status"></p>
+							</a>
+						</li>
+						<li>
+							<a>
+                                <label>Velocidade do vento:</label>
+                                <p id="vent"></p>
+							</a>
+                        </li>
+                        <li>
+							<a>
+                                <label>Nascer do sol:</label>
+                                <p id="nascer"></p>
+							</a>
+                        </li>
+                        <li>
+                            <a>
+                                <label>Por do sol:</label>
+                                <p id="porsol"></p>
+                            </a>
+                        </li>
+						
+					</ul>
+				</nav>
+			</div>
         </div>
-    </div>
-</body>
 
+    </body>
 </html>
